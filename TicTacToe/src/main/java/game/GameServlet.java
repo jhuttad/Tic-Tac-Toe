@@ -44,10 +44,10 @@ public class GameServlet extends HttpServlet {
 
                         switch (winner) {
                             case COMPUTER:
-                                request.setAttribute("winner", "la computadora");
+                                request.setAttribute("winner", "el computador");
                                 break;
                             case USER:
-                                request.setAttribute("winner", "usted");
+                                request.setAttribute("winner", "el usuario");
                                 break;
                             default:
                                 break;
@@ -56,16 +56,16 @@ public class GameServlet extends HttpServlet {
                     break;
 
                 case COMPUTER:
-                    request.setAttribute("winner", "la computadora");
+                    request.setAttribute("winner", "el computador");
                     break;
 
                 case USER:
-                    request.setAttribute("winner", "usted");
+                    request.setAttribute("winner", "el usuario");
                     break;
             }
 
             if (winner == GamePlayer.NOBODY && !game.hasEmptyCell()) {
-                request.setAttribute("winner", "empate");
+                request.setAttribute("winner", "ninguno");
             }
         }
 
