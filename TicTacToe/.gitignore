@@ -1,1 +1,9 @@
-/build/
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Build
+build/
+*.class
+*.war
